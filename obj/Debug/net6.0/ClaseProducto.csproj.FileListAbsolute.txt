@@ -1,0 +1,15 @@
+C:\Users\Ricardo Ibarra\ClaseProducto\bin\Debug\net6.0\ClaseProducto.exe
+C:\Users\Ricardo Ibarra\ClaseProducto\bin\Debug\net6.0\ClaseProducto.deps.json
+C:\Users\Ricardo Ibarra\ClaseProducto\bin\Debug\net6.0\ClaseProducto.runtimeconfig.json
+C:\Users\Ricardo Ibarra\ClaseProducto\bin\Debug\net6.0\ClaseProducto.dll
+C:\Users\Ricardo Ibarra\ClaseProducto\bin\Debug\net6.0\ClaseProducto.pdb
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.csproj.AssemblyReference.cache
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.AssemblyInfoInputs.cache
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.AssemblyInfo.cs
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.dll
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\refint\ClaseProducto.dll
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.pdb
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ClaseProducto.genruntimeconfig.cache
+C:\Users\Ricardo Ibarra\ClaseProducto\obj\Debug\net6.0\ref\ClaseProducto.dll
