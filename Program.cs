@@ -52,6 +52,38 @@ internal class Program
 
         return products;
         }
+
+        public static void SaveProductsBinary(List<Product>products)
+        {
+            BinaryWriter binOut =
+            new BinaryWriter(
+            new FileStream(@"C:\Users\Ricardo Ibarra\ClaseProducto\Products.bin", FileMode.Create, FileAccess.Write));
+            
+            foreach (var product in products)
+            {
+                binOut.Write(product.Code);
+                binOut.Write(product.Description);
+                binOut.Write(product.Price);
+            }
+            binOut.Close();
+        }
+            public static List<Product> GetProductsBin()
+            {
+                BinaryReader binaryIn =
+                new BinaryReader(
+                new FileStream(@"C:\Users\Ricardo Ibarra\ClaseProducto\Products.bin", FileMode.Open, FileAccess.Read));
+
+                List<Product> products = new List<Product>();
+                while(binaryIn.PeekChar() != -1)
+                {
+                    Product product = new Product(binaryIn.ReadString(), binaryIn.ReadString(), binaryIn.ReadDecimal());
+                    products.Add(product);
+                }
+                binaryIn.Close();
+                return products;
+            }
+            
+        
     }
 
     private static void Main(string[] args)
@@ -60,12 +92,19 @@ internal class Program
         List<Product> products = new List<Product>();
         products.Add(new Product("A01", "Pasta", 10.99m)); 
         products.Add(new Product("A02", "Salsa", 8.99m));
-        ProductsDB.SaveProducts(products);
+        ProductsDB.SaveProductsBinary(products);
 
         Product Pasta = new Product ("0001", "Pasta", 10.99m);
         Product salsa = new Product ("0002", "Salsa", 8.99m);
         */
 
+        List<Product> ps;
+        ps = ProductsDB.GetProductsBin();
+        foreach (var p in ps)
+        {
+            Console.WriteLine(p.Description);
+        }
+/*
         List<Product> pds = new();
         pds = ProductsDB.GetProducts();
         foreach (Product p in pds)
@@ -75,5 +114,6 @@ internal class Program
                 Console.WriteLine(p.Price);
             }
         }
+        */
     }
 }
